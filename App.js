@@ -1,3 +1,4 @@
+import { PaperProvider } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
@@ -24,18 +25,20 @@ function MainTabs() {
 function App() {
   return (
     <>
-      <StatusBar style="dark" />
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Checkin">
-          <Stack.Screen name="Checkin" component={CheckinScreen} />
-          <Stack.Screen name="Scan" component={ScanScreen} />
-          <Stack.Screen
-            name="MainTabs"
-            component={MainTabs}
-            options={{ headerShown: false }}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <PaperProvider>
+        <StatusBar style="dark" />
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Checkin">
+            <Stack.Screen name="Checkin" component={CheckinScreen} />
+            <Stack.Screen name="Scan" component={ScanScreen} />
+            <Stack.Screen
+              name="MainTabs"
+              component={MainTabs}
+              options={{ headerShown: false }}
+            />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </PaperProvider>
     </>
   );
 }
