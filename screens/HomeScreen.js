@@ -1,6 +1,7 @@
 import React from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 import ProfileHeader from "../components/Home/ProfileHeader";
+import { Title } from "react-native-paper";
 
 // Static data representing user's gym activity
 const activityData = [
@@ -19,6 +20,9 @@ function HomeScreen() {
   return (
     <>
       <ProfileHeader />
+      <View style={styles.container}>
+        <Title>Progress</Title>
+      </View>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.container}>
           {activityData.map(function (day, index) {
