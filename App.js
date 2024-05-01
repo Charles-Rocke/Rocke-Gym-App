@@ -8,6 +8,7 @@ import ScanScreen from "./screens/ScanScreen";
 import HomeScreen from "./screens/HomeScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import WorkoutScreen from "./screens/WorkoutScreen";
+import StartScreen from "./screens/StartScreen";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -28,8 +29,8 @@ function App() {
       <PaperProvider>
         <StatusBar style="dark" />
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="Checkin">
-            <Stack.Screen name="Checkin" component={CheckinScreen} />
+          <Stack.Navigator initialRouteName="Start">
+            <Stack.Screen name="Start" component={StartScreen} />
             <Stack.Screen name="Scan" component={ScanScreen} />
             <Stack.Screen
               name="MainTabs"
