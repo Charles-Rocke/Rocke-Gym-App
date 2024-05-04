@@ -1,4 +1,4 @@
-const pushData = {
+export const pushData = {
   strength: {
     chest: {
       upper: [

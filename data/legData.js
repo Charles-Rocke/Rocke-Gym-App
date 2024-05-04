@@ -1,4 +1,4 @@
-const legData = {
+export const legData = {
   strength: {
     quads: [
       {

@@ -10,7 +10,8 @@ import ScanScreen from "./screens/ScanScreen";
 import HomeScreen from "./screens/HomeScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import WorkoutScreen from "./screens/WorkoutScreen";
-import StartScreen from "./screens/StartScreen";
+import StartScreen from "./screens/Start/StartScreen";
+import PriorityScreen from "./screens/Start/PriorityScreen";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -45,7 +46,7 @@ function App() {
           }}
         >
           <Stack.Screen name="Start" component={StartScreen} />
-          <Stack.Screen name="Scan" component={ScanScreen} />
+          <Stack.Screen name="Priority" component={PriorityScreen} />
           <Stack.Screen
             name="MainTabs"
             component={MainTabs}

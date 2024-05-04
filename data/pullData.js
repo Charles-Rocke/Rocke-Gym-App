@@ -1,4 +1,4 @@
-const pullData = {
+export const pullData = {
   strength: {
     back: {
       traps: [
@@ -400,7 +400,7 @@ const pullData = {
         // Add more exercises as needed
       ],
     },
-    rearDelts: {
+    "rear Delts": {
       rear: [
         {
           name: "Facepulls",

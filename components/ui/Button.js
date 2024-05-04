@@ -2,14 +2,14 @@ import * as React from "react";
 import { StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
 
-function Btn({ children }) {
+function Btn({ children, onPress }) {
   return (
     <Button
       style={styles.button}
       mode="elevated"
       buttonColor="#F85F6A"
       textColor="white"
-      onPress={() => console.log("Pressed")}
+      onPress={onPress}
     >
       {children}
     </Button>
